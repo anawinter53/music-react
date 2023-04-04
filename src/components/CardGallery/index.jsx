@@ -1,0 +1,5 @@
+return (
+    <div>
+        <CardGallery />
+    </div>
+)
