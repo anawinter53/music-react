@@ -1,35 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import Music from './Music';
+// import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <>
+    <header>About Neoni</header>
+    <h2>Alternative pop, rock and electronic band</h2>
+    <p>Caitlin and Sid combine modern alternative pop and electronic music. In short time they've built an extensive catalog, debuted their first album 'Wars in a Wonderland' in the Fall of 2021 and “All My Favorite Monsters” in 2022 and amassed over 450 million streams on Spotify, two viral TikTok songs DARKSIDE and ROYALTY with over 1 billion video views with 1 million user generated videos. Their music continues to connect with a broad audience worldwide.</p>
+    <Music />
+    </>
   )
 }
 
-export default App
+
