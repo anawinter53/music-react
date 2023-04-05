@@ -1,7 +1,23 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card-gallery {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border-color: black solid 2px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  padding: 20px;
+  justify-content: center;
 }
 

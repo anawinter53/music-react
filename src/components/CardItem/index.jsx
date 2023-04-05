@@ -1,21 +1,14 @@
 
 
-export default function CardItem(card) {
-
-
-
-    function name() {
-        console.log('this works')
-    }
-
-    name()
-
+export default function CardItem({card}) {
 
   return (
-    <>
-        <h1>{card.name}</h1>
-        <h1>hello</h1>
-    </>
+    <div className='card-item'>
+        <img src={card.img_url} />
+        <h2>{card.name}</h2>
+        <h3>{card.artist}</h3>
+        <h3>{card.album}</h3>
+    </div>
   )
 }
 

@@ -7,11 +7,10 @@ export default function CardGallery({artistData}) {
 
 
     return (
-    <div>
-        {artistData.map((card) => {
-            <CardItem card={card}/>
-        })}
-        
-    </div>
+        <div className='card-gallery'>
+            
+            {artistData.map((card, i) => <CardItem card={card} key={i}/>)}
+           
+        </div>
     )
 }
